@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet - HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+     rel="stylesheet">
+    <link href="./Resources/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+       <ul id="tabs">
+       <li><a herf="index.html">HTML</a></li>
+       <li><a herf="Css.html">CSS</a></li>
+       <li><a herf="#">JS</a></li>
+       </ul>
+    </nav>
+    <header>
+       <h1>Cheatsheet</h1>
+    </header>
+    <!--Headings-->
+       <h2>CSS Properties</h2>
+   
+       <tr>
+         <td>Linking the Css File</td> <br>
+         <td>&lt;link href='www.css' rel='stylesheet'&gt;<br>
+           <ul>
+             <li><strong>href:</strong> like the anchor element, 
+                 the value of this attribute must be the address, or path, 
+                 to the CSS file.</li>
+             <li><strong>rel: </strong> this attribute       describes the relationship between the HTML 
+                 file and the CSS file. 
+                 Because you are linking to a stylesheet, 
+                 the value should be set to stylesheet.</li>
+        </td>
+     </tr>
+       <p> 
+   
+   <h3 id="highlight">Ruleset terms</h3> 
+     
+       <ul>
+         <li><strong>Selector:</strong> The beginning of the ruleset used 
+             to target the element that will be styled.</li>
+   
+         <li><strong>Declaration Block:</strong> The code in-between (and including) the curly braces { }
+              that contains the CSS declaration(s).</li>
+   
+          <li> <strong> Declaration:</strong> The group name for a property and
+              value pair that applies a style to the selected element.</li>
+   
+          <li><strong>Property:</strong> The first part of the declaration that signifies what visual 
+             characteristic of the element is to be modified.</li>
+   
+         <li><strong>Value:</strong> The second part of the declaration that signifies 
+             the value of the property.</li>
+        </ul>
+   
+     
+    <h3 id="highlight">Inline style terms</h3>   
+     <ul>
+   
+          <li><strong>opening Tag:</strong> The start of an HTML element. 
+             This is the element that will be styled.</li>
+   
+          <li><strong> attribute</strong> The style attribute is used to add CSS inline 
+             styles to an HTML element.</li>
+   
+         <li><strong>declaration:</strong> The group name for a property and value pair that 
+             applies a style to the selected element.</li>
+   
+          <li><strong> property:</strong> The first part of the declaration that signifies what
+              visual characteristic of the element is to be modified.</li>
+   
+          <li><strong>value:</strong> The second part of the declaration that 
+             signifies the value of the property.</li>
+       </ul>
+   
+    <h3 id="highlight">The Box Model and Padding</h3>   
+       <p>The box model comprises the set of properties that define parts
+           of an element that take up space on a web page. </p>
+   
+   <ol>
+   
+       <li><strong> width: / height:</strong>The width and height of the content area. </li>
+   
+       <li><strong>padding:</strong> The amount of space between the content area and 
+           the border.</li>
+   
+      <li><strong>border:</strong> The thickness and style of the 
+       border surrounding the content area and padding.</li>
+   
+       <li><strong>margin:</strong> The amount of space between
+            the border and the outside edge of the element.</li>
+   
+    </ol>
+   
+    <h3>Borders </h3>   
+        <p> is a line that surrounds an element, like a frame around a painting. 
+           <br>Borders can be set with a specific width, style, and color.
+        </p>
+   <ul>
+   
+    <li><strong>width:</strong> The thickness of the border.
+       A border’s thickness can be set in pixels or with one of the following keywords: 
+       thin, medium, or thick.</li>
+   
+    <li><strong>style:</strong> The design of the border. 
+       Web browsers can render any of 10 different styles. 
+       Some of these styles include: none, dotted, and solid.</li>
+   
+   <li><strong>color:</strong> The color of the border. 
+       Web browsers can render colors using a few different formats, 
+       including 140 built-in color keywords.</li>
+   
+    <li><strong>property:</strong> The first part of the declaration that signifies what
+        visual characteristic of the element is to be modified.</li>
+   
+   </ul>
+   
+   <h3 id="highlight">Padding </h3>   
+        <p> CSS height and width properties can be used to modify these 
+           default dimensions.
+        </p>
+   
+    <h3 id="highlight">Borders </h3>   
+        <p> is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color.
+        </p>
+   <ul>
+   
+    <li><strong>width:</strong> The thickness of the border.
+       A border’s thickness can be set in pixels or with one of the following keywords: 
+       thin, medium, or thick.</li>
+   
+    <li><strong>style:</strong> The design of the border. 
+       Web browsers can render any of 10 different styles. 
+       Some of these styles include: none, dotted, and solid.</li>
+   
+   <li><strong>color:</strong> The color of the border. 
+       Web browsers can render colors using a few different formats, 
+       including 140 built-in color keywords.</li>
+   
+    <li><strong>property:</strong> The first part of the declaration that signifies what
+        visual characteristic of the element is to be modified.</li>
+   
+   </ul>
+   
+     </p>
+   <table class="table-table">
+       <thead>
+     <!--CSS-->
+         <tr>
+             <th>Tags</th>
+             <th>Name</th>
+             <th>Description</th>
+         </tr>
+     <tbody>
+        <!--rows-->
+        <tr>
+         <td>*</td>
+         <td>Universal</td>
+         <td>universal selector selects all elements of any type.  
+     </td>
+   
+     </tr> <tr>
+         <td>.brand</td>
+         <td>Class</td>
+         <td>a class attribute is one of the most common 
+             ways to select an element. <br>
+             .brand {
+   
+             }
+     </td>
+   
+     </tr> <tr>
+         <td>.one { } .two{ }</td>
+         <td>Multiple Classes</td>
+         <td>Selecting more than one element 
+     </td>
+   
+     </tr> <tr>
+         <td>#title </td>
+         <td>ID</td>
+         <td>Single element with CSS  
+     </td>
+   
+     </tr>
+         <tr>
+             <td>p:hover</td>
+             <td>Pseudo-class</td>
+             <td>Changing states of an element.
+         <ul>
+             <li>:focus</li>
+             <li>:visited</li>
+             <li>:disabled</li>
+             <li>:active</li>
+             <li>:hover</li>
+         </ul> 
+         </td>
+   
+         </tr>
+         <tr class="active-row">
+             <td>stylesheets</td>
+             <td>Stylesheets</td>
+             <td>External styling of code</td>
+          </tr>
+   
+       <tr>
+         <td> text-align: left;</td>
+         <td>Text Align</td>
+         <td>Property will align text to the element that holds 
+             it, otherwise known as its parent.<br>
+           <ul>
+             <li>text-align: left;</li>
+             <li> text-align: right;</li>
+              <li>text-align: center;</li>
+             <li>text-align: justify;</li>
+           </ul>
+        </td>
+   
+        <tr>
+           <td> font-family:</td>
+           <td>font family</td>
+           <td> Font of an element can be changed using the font-family property.<br>
+             <ul>
+               <li>font-family: Caslon, Georgia, 'Times New Roman';</li>
+               <li> font-family: Caslon, Georgia, 'Times New Roman', serif;</li>
+                <li>font-weight: 700 or bold; </li>
+               <li>font-size: 18px;</li>
+               <li>font-style: italic;</li>
+               <li>text-transform: uppercase;</li>
+               <li>letter-spacing: 2px;</li>
+               <li>word-spacing: 3px or 0.3em;</li>
+               <li>line-height: 1.2, 12px, 5% or 2em</li>
+             </ul>
+          </td>
+   
+          <tr>
+           <td> @font-face</td>
+           <td>Web fonts using @font-face</td>
+           <td>Fonts can also be added using a @font-face ruleset in your CSS stylesheet instead 
+               of using a <link> element in your HTML document.<br>
+             <ul>
+               <li>OTF (OpenType Font)</li>
+               <li> TTF (TrueType Font)</li>
+                <li> WOFF (Web Open Font Format)</li>
+               <li> WOFF2 (Web Open Font Format 2)</li>
+               <li> The different formats are a progression of standards for how fonts will work 
+                   with different browsers, with WOFF2 being the most progressive.</li>
+               <li>@font-face { <br>
+                   src: 
+                 url('fonts/Fontname.ttf') }</li>
+             </ul>
+          </td>
+      
+        <tr>
+          <td>col</td>
+         <td>Column</td>
+         <td>This value makes it clear that 
+             the heading is for a column</td>
+       </tr>
+   
+     </tbody>
+       </thead>
+       </table>
+   <!--CSS Part-->
+       <h2>Visual CSS Properties</h2>
+   <table class="table-table">
+         <thead>
+       <!--Headings-->
+           <tr>
+               <th>Tags</th>
+               <th>Name</th>
+               <th>Description</th>
+           </tr>
+       <tbody>
+         <!--CSS Properties -->
+          <tr>
+            <td>color:</td>
+           <td>color</td>
+           <td>this property styles an element’s foreground color. </td>
+         </tr>
+   
+          <tr>
+            <td>rgb( 0, 0, 0,)</td>
+           <td>Red Green Blue</td>
+           <td>“RGB value” or just “RGB”, that uses decimal numbers 
+               rather than hexadecimal numbers.</td>
+         </tr>
+   
+         <tr>
+           <td>hsl(0, 0, 0,)</td>
+          <td>Hue, Saturation, Lightness</td>
+          <td>this property styles an element’s background color</td>
+        </tr>
+   
+        <tr>
+           <td>background-color:</td>
+          <td>Background Color</td>
+          <td>
+           <ol>
+               <li><strong>Hue: </strong>is the first number.</li>
+   
+               <li><strong>Saturation: </strong> refers to the intensity or purity of the color. 
+                   The saturation increases towards 100% as the color becomes richer. 
+                   The saturation decreases towards 0% as the color becomes grayer.</li>
+   
+               <li><Strong>Lightness: </Strong> refers to how light or dark the color is. 
+                   Halfway, or 50%, is normal lightness.</li>
+           </ol>
+          </td>
+        </tr>
+   
+        <tr>
+           <td>hsla:</td>
+          <td>Alpha</td>
+          <td>To use opacity in the HSL color scheme, 
+           use hsla instead of hsl, 
+           and four values instead of three. 
+           
+        <li>color: hsla(0, 0, 0, 0,)</li>
+   
+       <li> Last value is sometimes called opacity</li>
+   
+        <li> Alpha is a decimal number from zero to one. <br>
+           If alpha is zero, the color will be completely transparent. <br>
+           If alpha is one, the color will be opaque. <br>
+           The value for half-transparent would be 0.5. <br>
+   
+           You can think of the alpha value as, “the amount of the background to mix with the foreground”. <br>
+           When a color’s alpha is below one, any color behind it will be blended in. <br>
+           The blending happens for each pixel; no blurring occurs. <br>
+           </li>
+   
+           <li>color: rgba(0, 0, 0, 0,)</li>
+   </ol>
+       </td>
+        </tr>
+         <tr>
+            <td>opacity:</td>
+           <td>Opacity</td>
+           <td>can be used to make elements fade into others for a nice overlay effect.</td>
+         </tr>
+   
+          <tr>
+            <td>background-image:</td>
+           <td>Background Image</td>
+           <td>background-image: url('')</td>
+         </tr>
+   
+          <tr>
+            <td>!important</td>
+           <td>Important</td>
+           <td>It will override any style no matter how specific it is. 
+               As a result, it should almost never be used.
+               <br> Once !important is used, it is very hard to override.</td>
+         </tr>
+       </tbody>
+         </thead>
+            </table>
+   
+    <!--HTML -->
+    <h2>HTML Basics</h2>
+       <table class="table-table">
+         <thead>
+       <!--Headings-->
+           <tr>
+               <th>Tags</th>
+               <th>Name</th>
+               <th>Description</th>
+           </tr>
+       <tbody>
+          <!--HTML Basics-->
+           <tr>
+               <td>&lt;div&gt;</td>
+               <td>Div</td>
+               <td>Attributes</td>
+           </tr>
+           <tr class="active-row">
+               <td>&lt;p&gt;</td>
+               <td>Paragraphs</td>
+               <td>Contain a block if plain text.</td>
+            </tr>
+   
+          <tr>
+            <td>&lt;header&gt;</td>
+           <td>Header</td>
+           <td>Top of the website</td>
+         </tr> 
+         
+         <tr>
+            <td>&lt;nav&gt;</td>
+           <td>Navigation</td>
+           <td>The site's navigation</td>
+         </tr>
+         
+         <tr>
+            <td>&lt;main&gt;</td>
+           <td>Main</td>
+           <td>The main body of a site</td>
+         </tr> 
+         
+         <tr>
+            <td>&lt;section&gt;</td>
+           <td>Section</td>
+           <td>Defines elements in a document, such as chapters, headings, 
+               or any other area of the document with the same theme.</td>
+         </tr> 
+         
+         <tr>
+            <td>&lt;article&gt;</td>
+           <td>Article</td>
+           <td>Holds content that makes sense on its 
+               own such as articles, blogs, comments, etc.</td>
+         </tr>
+   
+         <tr>
+            <td>&lt;aside&gt;</td>
+           <td>Aside</td>
+           <td>Contains information that is related to the main content,
+               but not required in order to understand the dominant information. </td>
+         </tr>
+   
+         <tr>
+            <td>&lt;figure&gt;</td>
+           <td>Figure</td>
+           <td>Encapsulates all types of media.</td>
+         </tr>
+   
+         <tr>
+            <td>&lt;figcaption&gt;</td>
+           <td>Figcaption</td>
+           <td>Is used to describe the media in.</td>
+         </tr>
+   
+         <tr>
+            <td>&lt;video&gt;</td>
+           <td>Video</td>
+           <td>Used for media files
+               <ul>
+                   <li>Controls</li>
+                   <li>Autoplay</li>
+                    <li>Loop</li>
+               </ul>
+           </td>
+           
+         </tr>
+   
+         <tr>
+            <tr>
+            <td>&lt;embed&gt;</td>
+           <td>Embed</td>
+           <td>Used for media files</td>
+         </tr>
+   
+         <tr>
+            <tr>
+            <td>&lt;audio&gt;</td>
+           <td>Audio</td>
+           <td>Used for media files</td>
+         </tr>
+   
+         <tr>
+            <td>&lt;article&gt;</td>
+           <td>Article</td>
+           <td>Holds content that makes sense on its own 
+               such as articles, blogs, comments, etc.</td>
+         </tr>
+   
+         <tr>
+           <td>&lt;span&gt;</td>
+           <td>Separate </td>
+           <td>Contains short pieces of text or other HTML. 
+               <br>They are used to separate small pieces of content that 
+                   are on the same line as other content.</td>
+         </tr>
+          <tr>
+            <td>&lt;em&gt;</td>
+           <td><em>Emphasize</td>
+           <td>This will render as <em>italic. </td>
+         </tr>
+   
+          <tr>
+            <td>&lt;strong&gt;</td>
+            <td><strong>Strong</strong></td>
+            <td>This will render as <strong> bold. </strong> </td>
+         </tr>
+   
+          <tr>
+            <td>&lt;br&gt;</td>
+           <td>Line Breaks</td>
+           <td>Breaks up the space between text.</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;ul&gt;</td>
+           <td>Unordered Lists</td>
+           <td>Create a list of items in no particular order.
+            <ul>
+               <li>Love Jones</li>
+               <li>The devil wears prada</li>
+                <li>iRobot</li>
+             </ul>
+     
+       </td>
+         </tr>
+          <tr>
+            <td>&lt;ol&gt;</td>
+           <td>Ordered Lists</td>
+           <td>Each list item is numbered. 
+            <ol>
+               <li>Number one</li>
+               <li>Number two</li>
+               <li>Number Three</li>
+                <li>Number Four</li>
+           </ol>
+     
+       </td>
+         </tr>
+          <tr>
+            <td>&lt;col&gt;</td>
+           <td>Column</td>
+           <td>This value makes it clear that the heading is for a column.</td>
+         </tr>
+   
+           <tr>
+            <td>&lt;img&gt;</td>
+           <td>Images</td>
+           <td>Allows you to add an image to a web page.</td>
+         </tr>
+   
+           <tr>
+            <td>&lt;alt&gt;</td>
+           <td>Image Alts</td>
+           <td>Description of the image.</td>
+         </tr>
+         
+          <!--HTML Table stuff-->
+           <tr>
+               <td>&lt;tr&gt;</td>
+               <td>Rows</td>
+               <td>represents rows </td>
+           </tr>
+   
+           <tr class="active-row">
+               <td>&lt;td&gt;</td>
+               <td>Data Cells</td>
+               <td>used to create data cells</td>
+            </tr>
+   
+         <tr>
+           <td>&lt;th&gt;</td>
+           <td>Table Headings</td>
+           <td>Used to add table headings</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;caption&gt;</td>
+           <td>Captions</td>
+           <td>Used to insert captions</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;thead&gt;</td>
+           <td>Separate Header</td>
+           <td>Adds a separate header to the table</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;tbody&gt;</td>
+           <td>Table body</td>
+           <td>Shows the main body of the table</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;tfoot&gt;</td>
+           <td>Table Footer</td>
+           <td>Creates a separate footer for the table</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;row&gt;</td>
+           <td>Row</td>
+           <td>This value makes it clear that 
+               the heading is for a row</td>
+         </tr>
+   
+          <tr>
+            <td>&lt;col&gt;</td>
+           <td>Column</td>
+           <td>This value makes it clear that the 
+               heading is for a column</td>
+         </tr>
+           </tbody>
+                </thead>
+                    </table>
+   
+   <footer> 
+       <p2> All copyrights belong to jazzii.design Terms of use </p2>
+   </footer>
+   
+        
+   </body>
